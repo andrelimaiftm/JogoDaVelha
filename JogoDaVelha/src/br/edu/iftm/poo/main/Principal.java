@@ -2,6 +2,7 @@ package br.edu.iftm.poo.main;
 
 import br.edu.iftm.poo.classes.CPU;
 import br.edu.iftm.poo.classes.Jogador;
+import br.edu.iftm.poo.classes.Player;
 
 public class Principal {
 
@@ -17,6 +18,9 @@ public class Principal {
         int[] jogada = computador.realizaJogada();
         System.out.println(jogada[0]);
         System.out.println(jogada[1]);
+
+        player1.login();
+        //computador.login();
 
     }
 }

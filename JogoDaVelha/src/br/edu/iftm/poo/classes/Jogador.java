@@ -2,11 +2,7 @@ package br.edu.iftm.poo.classes;
 
 import java.util.Scanner;
 
-public class Jogador {
-
-    //atributos da classe
-    private String nickname;
-    private char simbolo;
+public class Jogador extends Player implements Autenticacao{
 
     //metodos construtores
     public Jogador (String nome, char simbolo){
@@ -14,7 +10,9 @@ public class Jogador {
         this.simbolo = simbolo;
     }
 
+
     //metodos da classe
+    @Override
     public int[] realizaJogada(){
         int[] posicao = new int[2];
         Scanner entrada = new Scanner(System.in);
@@ -25,20 +23,8 @@ public class Jogador {
         return posicao;
     }
 
-    //metodos getter e setter
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public char getSimbolo() {
-        return simbolo;
-    }
-
-    public void setSimbolo(char simbolo) {
-        this.simbolo = simbolo;
+    @Override
+    public boolean login() {
+        return false;
     }
 }

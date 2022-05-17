@@ -27,7 +27,7 @@ public class Tabuleiro {
             System.out.println("Posição invalida");
             return false;
         }else{
-            if(tabuleiro[linha][coluna ] == '*'){
+            if(tabuleiro[linha][coluna] == '*'){
                 tabuleiro[linha][coluna] = simbolo;
                 return true;
             }else{

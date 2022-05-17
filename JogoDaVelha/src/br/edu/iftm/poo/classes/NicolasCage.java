@@ -2,7 +2,13 @@ package br.edu.iftm.poo.classes;
 
 import java.util.Random;
 
-public class NicolesCage extends Player implements Autenticacao {
+public class NicolasCage extends Player implements Autenticacao {
+
+    public NicolasCage() {
+        this.nickname = "Nicolas Cage";
+        this.simbolo = 'N';
+    }
+
     @Override
     public boolean login() {
         return false;
